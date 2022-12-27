@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>My-web</title>
+	</head>
+	<script>
+		function copy(){
+			var text = document.getElementById('text1').value
+			if(text.trim().length==0){
+			      Result.innerHTML = "文本框为空！！！";  
+			      obj.focus();
+			}else{
+				 document.getElementById('text2').value=text
+				 Result.innerHTML = "";
+				 document.getElementById('text3').innerHTML='文本复制成功！'
+			}
+				
+		}
+		
+	</script>
+	
+<body >
+	    <h3>点击复制，把第一个文本框内容复制到第二个文本框</h3>
+		<input type="text"  id="text1" />
+		<button onclick=" copy()">复制</button>
+		<input type="text"  id="text2"/><br/>
+		<span id="Result"></span>
+		<a id="text3"></a>
+	</body>
+</html>
